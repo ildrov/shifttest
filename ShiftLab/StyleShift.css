@@ -1,0 +1,102 @@
+﻿body {
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.highlight {
+    background-color: gray;
+    color: white
+}
+
+.selectHighlight {
+    background-color: black ;
+}
+
+.fulltabl {
+    float:left;
+    display: table;
+    border: 1px solid #fff;
+    box-sizing:border-box;
+    margin: auto;
+    max-width: 1600px;
+    min-width: 421px;
+}
+
+.a {
+    border-bottom: 1px solid #fff;
+}
+
+.a,
+.b {
+    max-width: 1600px;
+    min-width: 421px;
+}
+
+.clear,
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.a div:last-child,
+.b div:last-child {
+    border-right: 0;
+}
+
+@media (max-width:420px) {
+    .parent {
+        
+        width: 150px;
+    }
+    .child {
+        
+        width: 150px;
+    }
+    .fulltabl {
+        width: 318px;
+        flex-direction: column;
+    }
+}
+
+.parent {
+    transition: 0.5s linear;
+    border: 1px solid black;
+    display: block;
+    float: left;
+    width: 318px;
+    height: 35px;
+    background: #fd974f;
+    text-align: center;
+    line-height: 35px;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+}
+
+.child {
+    transition: 0.5s linear;
+    border: 1px solid black;
+    display: block;
+    width: 318px;
+    float: left;
+    height: 45px;
+    background: #fef2e4;
+    text-align: center;
+    line-height: 45px;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+}
+
+    .child:hover {
+        background: #c60000;
+        color: aliceblue;
+    }
+
+.parent:hover {
+    background: #805a3b;
+    color:aliceblue;
+}
+
